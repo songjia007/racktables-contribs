@@ -23,6 +23,10 @@ RUN apk --no-cache add \
     php7-pdo_mysql \
     php7-session \
     php7-snmp \
+    php7-zip \
+    php7-simplexml \
+    php7-xml \
+    php7-xmlwriter \
     && chmod +x /entrypoint.sh \
     && curl -sSLo /racktables.tar.gz 'https://github.com/RackTables/racktables/archive/RackTables-0.21.3.tar.gz' \
     && tar -xz -C /opt -f /racktables.tar.gz \
